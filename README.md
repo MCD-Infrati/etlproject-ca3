@@ -11,7 +11,7 @@ This template is based on the template proposed by the [Data Science Working Gro
 ____________________________________________________________________________________
 
 # Final Project
-This project is a part of the  **Proyecto 1 de Innovación Tecnológica** course in the Applied Artificial Intelligence Master, Universidad Icesi, Cali Colombia. 
+This project is a part of the  **Proyecto final de Infraestructura y Arquitectura de TI** course in the Data Science Master, Universidad Icesi, Cali Colombia. 
 
 #### -- Project Status: [Active, On-Hold, Completed]
 
