@@ -17,22 +17,20 @@ This project is a part of the  **Proyecto 1 de Innovación Tecnológica** course
 
 ## Contributing Members
 
-**Team Leader: [Full Name](https://github.com/[github handle])(@slackHandle)**
-**Instructor: [Full Name](https://github.com/[github handle])(@slackHandle)**
-
-#### Other Members:
-
 |Name     |  Email   | 
 |---------|-----------------|
-|[Full Name](https://github.com/[github handle])| @johnDoe        |
-|[Full Name](https://github.com/[github handle]) |     @janeDoe    |
+|[Claudia Aragon](https://github.com/Clauaragon)| @Clauaragon       |
+|[Álvaro J. Cabrera](https://github.com/alvarojcabrera)| @alvarojcabrera   |
+|[Alfredo Aponte](https://github.com/ajapontes) |     @ajapontes    |
+|[Alvaro Rodriguez](https://github.com/finanzasvlr) |     @finanzasvlr    |
+
 
 ## Contact
-* Feel free to contact the team leader or the instructor with any questions or if you are interested in contributing!
+* Feel free to contact any of the contributing members with any questions or if you are interested in contributing!
 
 
 ## Project Intro/Objective
-The purpose of this project is ________. (Describe the main goals of the project and potential civic impact. Limit to a short paragraph, 3-6 Sentences)
+The purpose of this project is practice an ETL process using Pentaho.
 
 ### Partner
 This section should be added when there's a partner institution 
