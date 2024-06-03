@@ -10,7 +10,7 @@ This template is based on the template proposed by the [Data Science Working Gro
 ## Remove this table after updating your project's information
 ____________________________________________________________________________________
 
-# Project Name
+# Final Project
 This project is a part of the  **Proyecto 1 de Innovación Tecnológica** course in the Applied Artificial Intelligence Master, Universidad Icesi, Cali Colombia. 
 
 #### -- Project Status: [Active, On-Hold, Completed]
