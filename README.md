@@ -7,13 +7,13 @@ This is the template for the ETL assignment in the IFRATI 2024-1 court at the Da
 This template is based on the template proposed by the [Data Science Working Group] (https://github.com/sfbrigade/data-science-wg) Code for the [San Francisco’s Code initiative](https://github.com/sfbrigade/data-science-wg) 
 
 *Instructions: Edit this template filling in the titles, information, and links! Feel free to stray a bit to suit your project but try to provide the main information for reviews and feedback purposes.*
-## Remove this table after updating your project's information
+
 ____________________________________________________________________________________
 
 # Final Project
 This project is a part of the  **Proyecto final de Infraestructura y Arquitectura de TI** course in the Data Science Master, Universidad Icesi, Cali Colombia. 
 
-#### -- Project Status: [Active, On-Hold, Completed]
+#### -- Project Status: [Active]
 
 ## Contributing Members
 
@@ -47,17 +47,12 @@ This section should be added when there's a partner institution
 * etc.
 
 ### Technologies
-* R 
-* Python
-* D3
-* PostGres, MySql
-* Pandas, jupyter
-* HTML
-* JavaScript
-* etc. 
+* Pentaho 
+* MongoDB
+* Relational DB
 
 ## Project Description
-(Provide a more detailed overview of the project.  Talk a bit about your data sources and what questions and hypotheses you are exploring. What specific data analysis/visualization and modeling work are you using to solve the problem? What blockers and challenges are you facing?  Feel free to number or bullet point things here)
+Build the ETL process using Pentaho Data Integration (PDI) in order to obtain a csv file, carrying out the extraction and transformation process of the data available in the BD Ames relational database, in csv files and in MongoDB.
 
 ## Getting Started
 Instructions for contributors
