@@ -1,5 +1,7 @@
 # Trabajo final ETL: asignatura Infraestructura y Arquitectura, Maestría en Ciencia de Datos Universidad ICESI
 
+Intregrantres: Claudia Aragón, Álvaro Cabrera, Alfredo Aponte, Álvaro Rodríguez.
+
 ## 1.  Contexto del negocio
 
 https://github.com/MCD-Infrati/etlproject-ca3/blob/main/01_Contexto_del_negocio.md
