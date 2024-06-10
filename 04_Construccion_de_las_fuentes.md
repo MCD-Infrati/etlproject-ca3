@@ -32,6 +32,8 @@ Pendiente
 
 # 4.3 BD Mongo 
 
+Para MongoDB nos conectamos a la base "test" ya construida en el aplicativo "MONGODBCOMPASS" con el usuario de ICESI.  Las colecciones a las que debemos conectarnos son "bsmt", "garage", "misc" y "pool".
+
 
 
 
