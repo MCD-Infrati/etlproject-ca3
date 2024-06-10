@@ -1,0 +1,1 @@
+Se tienen tres fuentes de datos heterogéneas  como Archivo de datos Ames Property.csv, script sql y datos de conexión MongoDB.  Las cuales se  extraerán, transformarán y cargarán de los datos en un Data Warehouse a través de la herramienta PENTAHO.
