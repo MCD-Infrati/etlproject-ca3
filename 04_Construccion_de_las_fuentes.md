@@ -1,4 +1,4 @@
-# 4. Construccion de las fuentes
+# 4. Construcción de las fuentes
 
 # 4.1 Archivo CSV
 
@@ -33,6 +33,11 @@ Pendiente
 # 4.3 BD Mongo 
 
 Para MongoDB nos conectamos a la base "test" ya construida en el aplicativo "MONGODBCOMPASS" con el usuario de ICESI.  Las colecciones a las que debemos conectarnos son "bsmt", "garage", "misc" y "pool".
+
+# 4.4 Arquitectura para la integración de fuentes
+
+![Arquitectura de integración ETL AMES](imagenes/arquitectura_diagrama.jpg)
+
 
 
 
