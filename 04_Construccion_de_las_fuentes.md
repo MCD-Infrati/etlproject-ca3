@@ -28,7 +28,11 @@ Los queries respectivos se encuentran en la carpeta "pipeline" archivo "CA3 Crea
 
 ## 4.2.3 Construcción de vistas SQL.
 
-Pendiente
+Para cubrir este punto se crearon 2 vistas.
+
+La primer vista nos permite sumarizar por PID la informacion de las habitaciones y los baños.
+
+La segunda vista, nos permite generar una unica fuente de informacion que vamos a llevar a Pentaho, en esta vista se enlazan todas las tablas que se encuentran en Elephant y se genera una unica fuente de información.
 
 # 4.3 BD Mongo 
 
