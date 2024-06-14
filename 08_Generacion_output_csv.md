@@ -25,6 +25,6 @@ Para generar el archivo se utilizo el componente Text file Output, al que se le 
 - Especificar fecha y hora en el nombre
 - formato de fecha y hora en el nombre
 
-Por otra parte, en el tab fields, se organizaron todos los campos en la secuencia que fue solicitada en la especificación inicial
+Por otra parte, en el tab fields, se organizaron todos los campos en la secuencia que fue solicitada en la especificación inicial y se ajustaron la longitud de los campos.
 
 
