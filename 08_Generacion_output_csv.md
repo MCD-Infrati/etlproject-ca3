@@ -113,3 +113,12 @@ Los campos que conforman el archivo de salida se describen a continuación:
 |79|Sale Type|BD_Relacional|SaleProperties|Tipo de venta| 
 |80|Sale Condition|BD_Relacional|SaleProperties|Condición de venta| 
 |81|SalePrice|BD_Relacional|SaleProperties|Precio de Venta| 
+
+
+## 8.4.2 Ejemplo de archivo
+
+En la carpeta Output se encuentra el archivo de ejemplo:
+
+    Ames_20240614013427.csv
+
+Como se describió al inicio del capitulo, este archivo fue generado el 14/06/2024 a las 01:34:27AM, conteniendo los campos descritos en el punto anterior.
