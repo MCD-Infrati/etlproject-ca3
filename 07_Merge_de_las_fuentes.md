@@ -1,4 +1,4 @@
-## 7. Merge de las fuentes ##
+# 7. Merge de las fuentes
 
 ![Imagen de WhatsApp 2024-06-04 a las 18 26 19_643106cc](https://github.com/MCD-Infrati/etlproject-ca3/assets/137736436/34723dc8-31be-4a65-a78f-8aaf4e705138)
 
@@ -63,6 +63,8 @@ Ahora, utlizando un LEFT JOIN con el resultado del paso anterior, se une con est
 
 ## 7.4 Flujo en Pentaho del proceso
 
-EL siguiente flujo describe los pasos creados en Pentaho para la generación del archivo:
+El siguiente flujo describe los pasos creados en Pentaho para la generación del archivo:
 
-[![Flujo Pentaho de Creacion de Archivo](https://github.com/MCD-Infrati/etlproject-ca3/blob/main/imagenes/CA3%Ames%Transformation.jpg "Flujo Pentaho de Creacion de Archivo")](https://github.com/MCD-Infrati/etlproject-ca3/blob/main/imagenes/CA3%Ames%Transformation.jpg "Flujo Pentaho de Creacion de Archivo")
+![](https://github.com/MCD-Infrati/etlproject-ca3/blob/main/imagenes/CA3%20Ames%20Transformation.jpg)
+
+> Flujo Pentaho de Creación de Archivo
