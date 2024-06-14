@@ -16,27 +16,26 @@ Es importante identificar el tipo de informacion que proveen y total de regsitro
 ## 6.2 Mongo DB 
   En Mongo DB Atlas se proporcionaron la base de datos "test" que contenía 4 tablas, los datos en estas tablas corresponden a:
 
-    *- Basement:* Analizando los datos, el universo de datos es de 2851 registros, lo que nos hace ver que no todos los apartamentos tienen un sótano. 
-    *- garage:* Se tiene informacion de 2773 parqueaderos para los apartamentos, lo que nos hace ver que no todos los apartamentos tienen un garage. 
-    *- misc:* 106 apartamentos tienen miscelaneos.
-    *- pool:* solo 13 apartamentos tienen piscina.
+- Basement: Analizando los datos, el universo de datos es de 2851 registros, lo que nos hace ver que no todos los apartamentos tienen un sótano. 
+- garage: Se tiene informacion de 2773 parqueaderos para los apartamentos, lo que nos hace ver que no todos los apartamentos tienen un garage. 
+- misc: 106 apartamentos tienen miscelaneos.
+- pool:  sólo 13 apartamentos tienen piscina.
 
 
 ## 6.3 BD Relacional en Elephant
 
 ### Tablas
 
-    *- amesdbtemp:* Decripción general de las propiedades, se cuentan con la informacion de 2930 propiedades.
-    *- floordetail:* Informacion de habitaciones y baños para cada piso de la propiedad. Se tienen 4182 registros, que al analizar muestran la informacion de cada piso de la propiedad. Al sumarizar la información en la vista vfloor_sum por apartamento, se obtienen la información para 2930 propiedades.
-    *- mssubclass:* Subclase de vivienda, en total hay 16 tipos identificados.
-    *- mszoning:* Zonas, la clasificación tiene un total de 8 zonas.
-    *- salesproperty: Informacion con el precio de venta de las propiedades, con un total de 2930 entradas correspondiente a cada propiedad.
-    *- typequality:* Se asigna una descrición a una escala de calidad, 5 tipos identificados. 
+- amesdbtemp: Decripción general de las propiedades, se cuentan con la informacion de 2930 propiedades.
+- floordetail: Informacion de habitaciones y baños para cada piso de la propiedad. Se tienen 4182 registros, que al analizar muestran la informacion de cada piso de la propiedad. Al sumarizar la información en la vista vfloor_sum por apartamento, se obtienen la información para 2930 propiedades.
+- mssubclass: Subclase de vivienda, en total hay 16 tipos identificados.
+- mszoning: Zonas, la clasificación tiene un total de 8 zonas.
+- salesproperty: Informacion con el precio de venta de las propiedades, con un total de 2930 entradas correspondiente a cada propiedad.
+- typequality: Se asigna una descrición a una escala de calidad, 5 tipos identificados. 
 
 ### Vistas
-    *- vfloor_sum:* Vista de la tabla floordetail, sumarizado el numero de habitaciones y baños por propiedad.
-
-    Codigo SQL de la vista:
+- vfloor_sum: Vista de la tabla floordetail, sumarizado el numero de habitaciones y baños por propiedad.
+Codigo SQL de la vista:
         SELECT floordetail.pid,
             sum(floordetail.bedrooms) AS bedrooms,
             sum(floordetail."Full Bath") AS "Full Bath",
@@ -44,8 +43,8 @@ Es importante identificar el tipo de informacion que proveen y total de regsitro
         FROM floordetail
         GROUP BY floordetail.pid;
 
-    *- vmaes:* Vista que integra la informacion desde la tabla amesdbtemp, uniendo con la vista vfloor_sum con las tablas mssubclass, mszoning, salesproperty y typequality. EL join que se crea en cada una de estas uniones es del tipo LEFT JOIN a sabiendas de que las tablas a la derecha no siempre tienen registros, en los casos que no hay una correspondencia se llena el valor con Null. El campo utilizado para estos join es el PID, que corresponde a la clave de la propiedad.
-
+- vmaes:
+Vista que integra la informacion desde la tabla amesdbtemp, uniendo con la vista vfloor_sum con las tablas mssubclass, mszoning, salesproperty y typequality. EL join que se crea en cada una de estas uniones es del tipo LEFT JOIN a sabiendas de que las tablas a la derecha no siempre tienen registros, en los casos que no hay una correspondencia se llena el valor con Null. El campo utilizado para estos join es el PID, que corresponde a la clave de la propiedad.
     La vista creada fue creado con el siguiente SQL:
         SELECT amesdbtemp.pid,
             mssubclass.description AS "MS SubClass",
