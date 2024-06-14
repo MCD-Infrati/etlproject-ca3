@@ -4,29 +4,88 @@ Se tienen tres fuentes de datos heterogéneas  como Archivo de datos Ames Proper
 
 ## 3.1 Archivo CSV
 
-|Campos|Fuente|Tabla|Descripción|Columa nro.|
-|:----|:----|:----|:----|:----|
-|PID|Ames Property.CSV|Ames Property.CSV|Información general de la propiedad|1|
-|Lot Frontage|Ames Property.CSV|Ames Property.CSV|Información general de la propiedad|2|
-|Lot Area|Ames Property.CSV|Ames Property.CSV|Información general de la propiedad|3|
-|Street|Ames Property.CSV|Ames Property.CSV|Información general de la propiedad|4|
-|Alley|Ames Property.CSV|Ames Property.CSV|Información general de la propiedad|5|
-|Lot Shape|Ames Property.CSV|Ames Property.CSV|Información general de la propiedad|6|
-|Land Contour|Ames Property.CSV|Ames Property.CSV|Información general de la propiedad|7|
-|Utilities|Ames Property.CSV|Ames Property.CSV|Información general de la propiedad|8|
-|Lot Config|Ames Property.CSV|Ames Property.CSV|Información general de la propiedad|9|
-|Land Slope|Ames Property.CSV|Ames Property.CSV|Información general de la propiedad|10|
-|Neighborhood|Ames Property.CSV|Ames Property.CSV|Información general de la propiedad|11|
-|Condition 1|Ames Property.CSV|Ames Property.CSV|Información general de la propiedad|12|
-|Condition 2|Ames Property.CSV|Ames Property.CSV|Información general de la propiedad|13|
-|Bldg Type|Ames Property.CSV|Ames Property.CSV|Información general de la propiedad|14|
-|House Style|Ames Property.CSV|Ames Property.CSV|Información general de la propiedad|15|
-|Overall Qual|Ames Property.CSV|Ames Property.CSV|Información general de la propiedad|16|
-|Overall Cond|Ames Property.CSV|Ames Property.CSV|Información general de la propiedad|17|
-|Year Built|Ames Property.CSV|Ames Property.CSV|Información general de la propiedad|18|
-|Year Remod/Add|Ames Property.CSV|Ames Property.CSV|Información general de la propiedad|19|
+|Columa nro.|Campos|Descripción| 
+|:----|:----|:----| 
+|1|PID|Id de la Propiedad| 
+|2|Lot Frontage|Pies lineales de calle conectados a la propiedad| 
+|3|Lot Area|Tamaño del lote en pies cuadrados| 
+|4|Street|Tipo de acceso vial| 
+|5|Alley|Tipo de acceso al callejón| 
+|6|Lot Shape|Forma general de la propiedad| 
+|7|Land Contour|Planitud de la propiedad| 
+|8|Utilities|Tipo de utilidades disponibles| 
+|9|Lot Config|configuración del lote| 
+|10|Land Slope|Pendiente de la propiedad| 
+|11|Neighborhood|ubicaciones físicas dentro de los límites de la ciudad de Ames| 
+|12|Condition 1|Proximidad a una carretera principal o vía férrea| 
+|13|Condition 2|Proximidad a una carretera principal o vía férrea (si hay una segunda)| 
+|14|Bldg Type|Tipo de vivienda| 
+|15|House Style|Estilo de vivienda| 
+|16|Overall Qual|calidad general del material y del acabado.| 
+|17|Overall Cond|Calificación de condición general| 
+|18|Year Built|fecha de construcción original| 
+|19|Year Remod/Add|fecha de remodelación| 
+# 3.3  BD Relacion (PostgreSQL)
 
-# 3.2  BD Relacion (PostgreSQL)
+## 3.3.1. Coleccion Amesdbtemp
+|Columa nro.|Campos|Descripción| 
+|:----|:----|:----| 
+|1|PID|Id de la Propiedad| 
+|2|MS SubClass|Clase de construcción| 
+|3|MS Zoning|Clasificación general de zonificación| 
+|4|Roof Style|Tipo de techo| 
+|5|Roof Matl|Material del tejado| 
+|6|Exterior 1st|Revestimiento exterior de la casa.| 
+|7|Exterior 2nd|Revestimiento exterior de la casa (si hay más de un material)| 
+|8|Mas Vnr Type|Tipo de revestimiento de mampostería| 
+|9|Mas Vnr Area|Área de revestimiento de mampostería en pies cuadrados| 
+|10|Exter Qual|Calidad del material exterior| 
+|11|Exter Cond|Estado actual del material en el exterior.| 
+|12|Foundation|Tipo de cimentación| 
+|13|Heating|Tipo de calefacción| 
+|14|Heating QC|Calidad y estado de la calefacción| 
+|15|Central Air|aire acondicionado centralizado| 
+|16|Electrical|Sistema eléctrico| 
+|17|1st Flr SF|Pies cuadrados del primer piso| 
+|18|2nd Flr SF|Pies cuadrados del segundo piso| 
+|19|Low Qual Fin SF|Pies cuadrados con acabado de baja calidad (todos los pisos)| 
+|20|Kitchen AbvGr|Promedio de cocina| 
+|21|Kitchen Qual|Calidad de cocina| 
+|22|TotRms AbvGrd|Total de habitaciones sobre rasante (no incluye baños)| 
+|23|Functional|Calificación de funcionalidad del hogar| 
+|24|Fireplaces|Número de chimeneas| 
+|25|Fireplace Qu|Calidad de chimenea| 
+|26|Paved Drive|Camino pavimentado| 
+|27|Wood Deck SF|Área de cubierta de madera en pies cuadrados| 
+|28|Open Porch SF|Área de porche abierto en pies cuadrados| 
+|29|Enclosed Porch|Área del porche cerrado en pies cuadrados| 
+|30|3Ssn Porch|Área de porche de tres estaciones en pies cuadrados| 
+|31|Screen Porch|Área del porche cubierto en pies cuadrados| 
+|32|Fence|Calidad de la valla| 
+
+## 3.3.2.Colección MSSubClass
+ 
+|Columa nro.|Campos|Descripción| 
+|:----|:----|:----| 
+ |1|Code|Código de la Subclase| 
+ |2|Description|Descripción de la Subclase| 
+ 
+
+## 3.3.2.Colección MSZoning
+ 
+|Columa nro.|Campos|Descripción| 
+|:----|:----|:----| 
+ |1|Code|Código de zonificación| 
+ |2|Description|Descripción de la zonificación| 
+
+
+## 3.3.2.Colección MSZoning
+ 
+|Columa nro.|Campos|Descripción| 
+|:----|:----|:----| 
+ |1|Code|Código de zonificación| 
+ |2|Description|Descripción de la zonificación| 
+
 
 |PID|BD_Relacional|Amesdbtemp|Detalles relacionados con la construcción|1|
 |:----|:----|:----|:----|:----|
