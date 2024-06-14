@@ -27,4 +27,8 @@ Para generar el archivo se utilizo el componente Text file Output, al que se le 
 
 Por otra parte, en el tab fields, se organizaron todos los campos en la secuencia que fue solicitada en la especificación inicial y se ajustaron la longitud de los campos.
 
+Los campos que conforman el archivo de salida se describen a continuación:
+
+
+
 
