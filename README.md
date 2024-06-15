@@ -39,12 +39,6 @@ This section should be added when there's a partner institution
 * Partner contact: [Name of Contact], [slack handle of contact if any]
 * If you do not have a partner leave this section out
 
-### Methods Used
-* Inferential Statistics
-* Machine Learning
-* Data Visualization
-* Predictive Modeling
-* etc.
 
 ### Technologies
 * Pentaho 
